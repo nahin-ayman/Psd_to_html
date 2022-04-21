@@ -1,0 +1,60 @@
+/* HEADER CSS START  */
+
+.header-container {
+    height: 125px;
+    border: var(--border);
+    display: flex;
+}
+.language{
+    /* border: var(--border); */
+    display: flex;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.language .selected-flag{
+    width: 27px;
+}
+.language .selected-flag img{
+    width: 100%;
+}
+
+.language .flag-list{
+    /* border: var(--border); */
+    position: relative;
+}
+.language .flag-list:hover .flag-list-images{
+    opacity: 1;
+    visibility: visible;
+    transition: .05s linear;
+}
+
+.language .flag-list .flag-list-trigger{
+    padding-left: 8px;
+}      
+.language .flag-list .flag-list-trigger i{
+    font-size: 13px;
+    color: var(--brand);
+    cursor: pointer;
+}
+.language .flag-list .flag-list-images {
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.language .flag-list .flag-list-images li {
+    width: 25px;
+    padding: 1px;
+}
+.language .flag-list .flag-list-images li img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* HEADER CSS END  */
+
+
+
+/* .language .flag-list .flag-list-images li {}
+.language .flag-list .flag-list-images li img {} */

@@ -1,41 +1,51 @@
-/* HEADER CSS START  */
+/*----------- HEADER CSS START-------  */
 
 .header-container {
     height: 125px;
-    border: var(--border);
+    /* border: var(--border); */
     display: flex;
 }
-.language{
+
+.row{
+    display: flex;
+    
+}
+
+/*------------ Column 1 --------------*/
+
+.col-1 {
+    display: flex;
+    /* border: var(--border); */
+}
+
+
+/*------------ Country Dropdown------- */
+
+.language {
     /* border: var(--border); */
     display: flex;
     margin-left: 300px;
-    margin-top: 50px;
+    margin-top: 50px; 
 }
-.language .selected-flag{
+.language .selected-flag {
     width: 27px;
 }
-.language .selected-flag img{
+.language .selected-flag img {
     width: 100%;
 }
 
-.language .flag-list{
+.language .flag-list {
     /* border: var(--border); */
     position: relative;
 }
-.language .flag-list:hover .flag-list-images{
+.language .flag-list:hover .flag-list-images {
     opacity: 1;
     visibility: visible;
     transition: .05s linear;
+    padding-left: 8px;
 }
 
-.language .flag-list .flag-list-trigger{
-    padding-left: 8px;
-}      
-.language .flag-list .flag-list-trigger i{
-    font-size: 13px;
-    color: var(--brand);
-    cursor: pointer;
-}
+
 .language .flag-list .flag-list-images {
     position: absolute;
     top: 100%;
@@ -52,9 +62,185 @@
 }
 
 
-/* HEADER CSS END  */
+/*--------- Currency Dropdown--------- */
+
+.currency {
+    display: flex;
+    padding-left: 55px;
+    margin-top: 49px;  
+}
+.selected-currency {
+    
+}
+.selected-currency span {
+    font-size: 13px;
+    color: var(--brand) ;
+    font-family: var(--circular);
+}
+.currency-dropdown {
+    position: relative;
+}
+.currency-dropdown:hover .currency-lists {
+    opacity: 1;
+    visibility: visible;
+}
+
+.currency-lists {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; 
+    margin-left: 8px;
+}
+.currency-lists li {
+    font-size: 13px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+
+/*-------------- Column 2------------- */
+
+.col-2{
+   margin-left: 180px;
+   margin-top: 12px;
+   /* border: var(--border); */
+}
+
+
+/*---------------- Column 3 -----------*/
+
+.col-3{
+    /* border: var(--border); */
+    margin-left: 270px;
+}
+.header-right-part {
+    /* border: var(--border); */
+    display: flex;
+    margin-top: 45px;
+}
+.header-right-part .cart {
+    position: relative;
+    padding-right: 10px;
+}
+.header-right-part .cart i {
+    font-size: 20px;
+    color: var(--brand);
+    
+}
+.header-right-part .cart span {
+    position: absolute;
+    font-size: 10px;
+    color: var(--white);
+    height: 18px;
+    background-color: var(--brand);
+    font-family: var(--circular);
+    top: -12px;
+    right: .5px;
+    padding: 3px 5px 4px 5px ;
+    border-radius: 25px;
+    border-left: 1px solid var(--white);
+}
+.header-right-part .total-price {
+    /* border: var(--border); */
+    margin-left: 8px;
+    padding-top: 2px;
+    font-size: 14px;
+    color: var(--brand);
+    font-family: var(--circular);
+}
+.header-right-part .login {
+    /* border: var(--border); */
+    margin-left: 32px;
+}
+.header-right-part .login a i {
+    font-size: 18px;
+    color: var(--brand);
+}
+.header-right-part .login a span {
+    font-size: 13px;
+    color: var(--brand);
+    font-family: var(--circular);
+    position: relative;
+    top: -2px;
+}
+
+
+/*-------------- Navbar Starts-------- */
+
+
+/*---------- Nav Links--------------- */
+
+nav {
+    background-color: var(--brand);
+}
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-container .col-1 {
+    /* border: var(--border); */
+    margin-left: 60px;
+    
+}
+.nav-container .col-1 .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-container .col-1 .nav-links li {
+    position: relative;
+}
+.nav-container .col-1 .nav-links li a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-family: var(--circular);
+    padding-left: 41px;
+    padding-top: 28px ;
+    padding-bottom: 28px ;
+}
 
 
 
-/* .language .flag-list .flag-list-images li {}
-.language .flag-list .flag-list-images li img {} */
+/*--------- Nav Search Box -----------*/
+
+.nav-container .col-2 {
+
+}
+.nav-container .col-2 .search-box {
+    /* border: var(--border); */
+    margin-right: 60px;
+    margin-top: 4px;
+}
+.nav-container .col-2 .search-box form {
+    position: relative;
+}
+.nav-container .col-2 .search-box form input{
+    width: 306px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+}
+.nav-container .col-2 .search-box form input::placeholder {
+   padding: 10px;
+   font-size: 14px;
+   color: #727272;
+   font-family: var(--circular);
+}
+.nav-container .col-2 .search-box form button{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    /* color: var(--brand); */
+    right: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.nav-container .col-2 .search-box form button i {
+    font-size: 18px;
+    color: var(--brand);
+}
+
+
+
+/*--------- Navbar Ends---------- */
+
+

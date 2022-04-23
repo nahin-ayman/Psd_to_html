@@ -21,6 +21,8 @@ p, ol, ul{
 
 ul li {
     list-style-type: none;
+    font-family: var(--circular);
+    color: var(--brand);
 }
 
 a, span, i, img, iframe {

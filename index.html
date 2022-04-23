@@ -40,13 +40,15 @@
   
  <div class="header-container">
      <div class="row">
+
         <div class="col-1">
+
             <div class="language">
                <div class="selected-flag">
                    <img src="./assets/images/Header/Flag-Icon.png" alt="Flag Icon">
                 </div>
                 <div class="flag-list">
-                    <div class="flag-list-trigger">
+                    <div class="dropdown">
                         <i class="fas fa-angle-down"></i>
                     </div>
                     <ul class="flag-list-images">
@@ -59,77 +61,105 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="currency">
+              <div class="selected-currency">
+                <span>USD</span>
+              </div>
+              <div class="currency-dropdown">
+                <div class="dropdown">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                    <ul class="currency-lists">
+                      <li>BDT</li>
+                      <li>BDT</li>
+                      <li>BDT</li>
+                      <li>BDT</li>
+                      <li>BDT</li>
+                    </ul>
+              </div>
+            </div>
+
         </div>
-        <div class="col-2"></div>
-        <div class="col-3"></div>
+
+        <div class="col-2">
+          <div class="logo">
+            <img src="./assets/images/Header/Logo.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-3">
+
+            <div class="header-right-part">
+              <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>10</span>
+              </div>
+              <div class="total-price">
+                $100.00
+              </div>
+              <div class="login">
+                <a href="">
+                  <i class="far fa-user-circle"></i>
+                  <span>Login</span>
+                </a>
+              </div>
+            </div>
+            
+        </div>
+
      </div>
  </div>
 
+ <nav>
 
+   <div class="nav-container">
 
- <!--  -->
+     <div class="col-1">
 
+       <ul class="nav-links">
+         <li><a href="">Home</a></li>
+         <li><a href="">About US</a></li>
+         <li class="hover" >
+           <a  href="">
+             PRODUCTS
+             <i class="fas fa-angle-down"></i>
+           </a>
+          </li>
+         <li class="hover">
+           <a href="">
+             Blog
+             <i class="fas fa-angle-down"></i>
+           </a>
+          </li>
+         <li>
+           <a href="">
+             Pages
+             <i class="fas fa-angle-down"></i>
+           </a>
+          </li>
+          <li><a href="">Contact</a></li>
+       </ul>
 
+     </div>
 
+     <div class="col-2">
 
-<!-- HTML CODES
+       <div class="search-box">
+         <form action="">
+            <input type="text" placeholder="Search..." >
+            <button><i class="fas fa-search"></i></button>
+         </form>
+       </div>
 
-    <div class="dropdown">
-                     
-                     <button class="dropbtn" ><i class="fas fa-angle-down"></i></button>
-                     
-                     <div class="dropdown-content">
-                         <a><img src="./assets/images/Header/w20/bd.png" alt=""></a>
-                         <a><img src="./assets/images/Header/w20/ba.png" alt=""></a>
-                         <a><img src="./assets/images/Header/w20/bb.png" alt=""></a>
-                         <a><img src="./assets/images/Header/w20/ad.png" alt=""></a>
-                         <a><img src="./assets/images/Header/w20/af.png" alt=""></a>
-                         <a><img src="./assets/images/Header/w20/ca.png" alt=""></a>
-                     </div>
-                 </div>
+     </div>
+   </div>
 
--->
-<!-- CSS Dropdown copied from w3schools
+ </nav>
 
-    .dropbtn {
-    color: var(--brand);
-    padding-left: 8px;
-    font-size: 13px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    border: 1px solid rgb(111, 157, 217);
-    border-radius: 2px;
-  }
-  
-  .dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-  
-  .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  
-  .dropdown:hover .dropbtn {
-      color: rgb(8, 106, 235);
-      transform: scale(1.05,1.05);
-    }
-
--->
+ <div class="banner-part">
+   
+ </div>
 
 
 </body>

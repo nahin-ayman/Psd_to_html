@@ -41,11 +41,7 @@ h1 ,h2, h3, h4, h5, h6 {
 }
 
 p{
-    width: 957px;
-    height: 87px;
     font-size: 14px;
-    line-height: 26px;
-    color:  var(--paragraph_color);
     font-family: var(--circular);
     
 }
@@ -58,3 +54,81 @@ p{
     color: var(--brand);
     cursor: pointer;
 }
+
+.btn-outline {
+    border: 1px solid var(--brand);
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--brand);
+    font-family: var(--circular);
+    padding: 15px 45px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.btn-outline::before {
+    position: absolute;
+    content: '';
+    background: var(--brand);
+    width: 13px;
+    height: 16px;
+    bottom: -6px;
+    left: -5px;
+    transform: rotate(137deg);
+}
+
+.btn-fill {
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: var(--brand);
+    color: var(--white);
+    font-family: var(--circular);
+    padding: 15px 45px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+
+
+/* --------------Common Heading -------------- */
+
+.common-heading-center {
+    text-align: center;
+}
+
+ .common-heading  .c-h-h6 {
+    font-size: 13px;
+    color: var(--orange);
+    font-family: var(--circular);
+    font-weight: 100;
+    padding-top: 12px;
+}
+
+ .common-heading  .c-h-h1 {
+    font-size: 45px;
+    color: var(--brand);
+    font-weight: 900;
+    font-family: var(--playfair);
+    padding-top: 5px;
+}
+
+ .common-heading  .c-h-h4 {
+    font-size: 18px;
+    /* line-height: 30px; */
+    color: #0a283c;
+    font-weight: 400;
+    font-style: italic;
+    font-family: var(--playfair);
+    padding-top: 16px;
+}
+
+.common-heading .first-p , .second-p {
+    width: 957px;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #726e6e;
+    font-family: var(--circular);
+    line-height: 26px;
+} 

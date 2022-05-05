@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /*----------- HEADER CSS START-------  */
@@ -8,6 +8,7 @@ body {
     height: 125px;
     /* border: var(--border); */
     display: flex;
+    width: 1vw;
 }
 
 .row{
@@ -182,6 +183,7 @@ nav {
 .nav-container {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 .nav-container .nav-col-1 {
     /* border: var(--border); */

@@ -76,6 +76,13 @@ p{
     left: -5px;
     transform: rotate(137deg);
 }
+.btn-outline-white {
+    border: unset;
+    padding: 15px 15px;
+}
+.btn-outline-white::before {
+    background-color: #cfd7dc;
+}
 
 .btn-fill {
     font-size: 14px;
